@@ -1,0 +1,15 @@
+C:\Common Software\StockView\StockView\bin\Debug\StockView.exe.config
+C:\Common Software\StockView\StockView\bin\Debug\StockView.exe
+C:\Common Software\StockView\StockView\bin\Debug\StockView.pdb
+C:\Common Software\StockView\StockView\obj\Debug\StockView.csprojAssemblyReference.cache
+C:\Common Software\StockView\StockView\obj\Debug\MainWindow.g.cs
+C:\Common Software\StockView\StockView\obj\Debug\App.g.cs
+C:\Common Software\StockView\StockView\obj\Debug\StockView_MarkupCompile.cache
+C:\Common Software\StockView\StockView\obj\Debug\StockView_MarkupCompile.lref
+C:\Common Software\StockView\StockView\obj\Debug\MainWindow.baml
+C:\Common Software\StockView\StockView\obj\Debug\StockView.g.resources
+C:\Common Software\StockView\StockView\obj\Debug\StockView.Properties.Resources.resources
+C:\Common Software\StockView\StockView\obj\Debug\StockView.csproj.GenerateResource.cache
+C:\Common Software\StockView\StockView\obj\Debug\StockView.csproj.CoreCompileInputs.cache
+C:\Common Software\StockView\StockView\obj\Debug\StockView.exe
+C:\Common Software\StockView\StockView\obj\Debug\StockView.pdb
