@@ -1,0 +1,16 @@
+C:\Common Software\StockView\StockView\bin\Release\StockView.exe.config
+C:\Common Software\StockView\StockView\bin\Release\StockView.exe
+C:\Common Software\StockView\StockView\bin\Release\StockView.pdb
+C:\Common Software\StockView\StockView\obj\Release\MainWindow.g.cs
+C:\Common Software\StockView\StockView\obj\Release\App.g.cs
+C:\Common Software\StockView\StockView\obj\Release\StockView_MarkupCompile.cache
+C:\Common Software\StockView\StockView\obj\Release\StockView_MarkupCompile.lref
+C:\Common Software\StockView\StockView\obj\Release\MainWindow.baml
+C:\Common Software\StockView\StockView\obj\Release\StockView.g.resources
+C:\Common Software\StockView\StockView\obj\Release\StockView.Properties.Resources.resources
+C:\Common Software\StockView\StockView\obj\Release\StockView.csproj.GenerateResource.cache
+C:\Common Software\StockView\StockView\obj\Release\StockView.csproj.CoreCompileInputs.cache
+C:\Common Software\StockView\StockView\obj\Release\StockView.exe
+C:\Common Software\StockView\StockView\obj\Release\StockView.pdb
+C:\Common Software\StockView\StockView\obj\Release\StockView.csprojAssemblyReference.cache
+C:\Common Software\StockView\StockView\obj\Release\GeneratedInternalTypeHelper.g.cs

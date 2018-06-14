@@ -26,24 +26,39 @@ namespace StockView
         private DispatcherTimer readDataTimer = new DispatcherTimer();
         public MainWindow()
         {
+
             InitializeComponent();
+
+            StockGrid.Background = new SolidColorBrush(Colors.Black);
 
             readDataTimer.Tick += new EventHandler(timeCycleAsync);
             readDataTimer.Interval = new TimeSpan(0, 0, 0, 1);
             readDataTimer.Start();
+            LoadData();
+
 
         }
 
         public void timeCycleAsync(object sender, EventArgs e)
         {
             LoadData();
+
+            LoadGridStyle();
         }
+
+        public void LoadGridStyle()
+        {
+
+        }
+
+
         public void LoadData()
         {
             StockGrid.AutoGenerateColumns = false;
 
             var result = GetRemoteResult();
             StockGrid.ItemsSource = GetRemoteResult();
+            
 
         }
 
@@ -101,5 +116,9 @@ namespace StockView
             }
         }
 
+        private void StockGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

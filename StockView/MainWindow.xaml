@@ -6,15 +6,52 @@
         xmlns:local="clr-namespace:StockView"
         mc:Ignorable="d"
         Title="股价查看器" Height="275.431" Width="400.431">
+
+    <Window.Resources>
+        <local:ColorConverter x:Key="ColorConverter"/>
+    </Window.Resources>
     <Grid>
-        <DataGrid x:Name="StockGrid" HorizontalAlignment="Left" Height="253" VerticalAlignment="Top" Width="407">
+        <DataGrid x:Name="StockGrid" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="股票代码" Binding="{Binding Symbol}"/>
+                <DataGridTextColumn Header="股票代码" Binding="{Binding Symbol}" />
                 <DataGridTextColumn Header="股票名称" Binding="{Binding Name}"/>
                 <DataGridTextColumn Header="现价" Binding="{Binding Price}"/>
                 <DataGridTextColumn Header="涨幅" Binding="{Binding Increase}"/>
                 <DataGridTextColumn Header="开盘价" Binding="{Binding Open}"/>
+                <DataGridTextColumn Header="昨收" Binding="{Binding PrevClose}"/>
+                <DataGridTemplateColumn Header="最新">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <!--<TextBlock HorizontalAlignment="Center" Text="{Binding Price}" Foreground="{MultiBinding Path=Price,Converter={StaticResource ColorConverter} }"  />-->
+                            <TextBlock HorizontalAlignment="Center" Text="{Binding Price}" >
+                                <TextBlock.Foreground >
+                                    <MultiBinding Converter="{StaticResource ColorConverter}"
+                                                   ConverterParameter="FormatLastFirst">
+                                        <Binding Path="Price"/>
+                                        <Binding Path="PrevClose"/>
+                                     </MultiBinding>
+                                </TextBlock.Foreground>
+                            </TextBlock>
+
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
             </DataGrid.Columns>
+            <DataGrid.RowStyle >
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="Black"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Red"/>
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="LightGray"/>
+                            <Setter Property="Foreground" Value="Red"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.RowStyle>
         </DataGrid>
 
     </Grid>
